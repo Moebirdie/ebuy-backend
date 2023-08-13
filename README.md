@@ -72,7 +72,23 @@ A visual representation of the working backend application may be seen here:
 
 ### Gif of User Experience making calls through Insomnia     
 
-![desc](https://github.com/Moebirdie/ebuy-backend/blob/main/Challenge13ORM.gif)  
+![desc](/assets/Challenge13ORM.gif)  
+
+### Category Model  
+  ![Alt text](assets/categoryModel.png)
+
+### Product Model  
+![Alt text](assets/ProductModel.png)
+
+### ProductTag Model  
+![Alt text](assets/ProductTagModel.png)
+
+### Tag Model  
+![Alt text](assets/TagModel.png)
+
+### Relationships  
+![Alt text](assets/index-relationships.png)
+
 
 
 
