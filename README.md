@@ -5,7 +5,7 @@
 
 ## Description
 
-This application demonstrates the use of Express.js, Sequelize and MySQL to create the backend APIs to support an eCommerce site. The API calls include all CRUD operations for each table. This application is intended to be using in conjunction with a front-end to display, update and remove information from a database.  The responses are intended to be used to display appropriate information once the action is completed.
+This application demonstrates the use of Express.js, Sequelize and MySQL to create the backend APIs to support an eCommerce site. More importantly this application focuses on the use of ORMs (Object Relational Mapping tools) and their ability to connect object oriented programming to interact with a relational database.  The API calls included in this application include all CRUD operations for each table. This application is intended to be using in conjunction with a front-end to display, update and remove information from a database.  The responses are intended to be used to display appropriate information once the action is completed.
 
 
 Link to video recording: [Video Recording]()  
@@ -47,6 +47,7 @@ Note:  The package.json file contains all of the packages needed.  Running npm i
 
 ## Features <a id="Features"></a>
 
+ - Ability to connect to a MySQL database
  - API routes to perform CRUD operations on the tables within the ecommerce_db.  
  - The tables included in the database with associated routes are:  
 	- categories  
