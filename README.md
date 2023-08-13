@@ -48,9 +48,9 @@ Note:  The package.json file contains all of the packages needed.  Running npm i
 ## Features <a id="Features"></a>
 
 API routes to perform CRUD operations on the tables within the ecommerce_db.  
-The tables included in the database with associated routes are:
-	- categories
- 	- products  
+The tables included in the database with associated routes are:  
+	- categories  
+  	- products  
   	- tags
   
 
