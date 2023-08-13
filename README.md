@@ -8,8 +8,8 @@
 This application demonstrates the use of Express.js, Sequelize and MySQL to create the backend APIs to support an eCommerce site. More importantly this application focuses on the use of ORMs (Object Relational Mapping tools) and their ability to connect object oriented programming to interact with a relational database.  The API calls included in this application include all CRUD operations for each table. This application is intended to be using in conjunction with a front-end to display, update and remove information from a database.  The responses are intended to be used to display appropriate information once the action is completed.
 
 
-Link to video recording: [Video Recording]()  
-Link to live README: [https://moebirdie.github.io/Inquirer-README-Generator/]()
+Link to video recording: [Video Recording]( https://us02web.zoom.us/rec/share/6vW4rNHD3B2EDWWG2d1sqbAHHI3fZNmoAAn1UaahWgBkf05D6EvH0YPyyLzyRifa.ZNQcsCr5ldGR5fQW?startTime=1691950480000)  passcode: d!K.Kk?5  
+Link to live README: [https://github.com/Moebirdie/ebuy-backend/](https://github.com/Moebirdie/ebuy-backend/)
 
 
 ## Table of Contents
@@ -70,25 +70,10 @@ This application is intended to be used to connect an eCommerce frontend to a My
 
 A visual representation of the working backend application may be seen here:  
 
-### User Experience     
+### Gif of User Experience making calls through Insomnia     
 
 ![desc](assets/images/enduserinput.png)  
 
-### Required Package Files:  
-
-![desc](assets/images/requiredfiles.png)  
-
-### Required Answers:  
-
-![desc](assets/images/requiredans.png)  
-
-### Logic for writing Images:  
-
-![desc](assets/images/writeimageslogic.png)  
-
-### When Functions:  
-
-![desc](assets/images/whenfunctions.png)  
 
 
 ## Contributors <a id="Contributing"></a>
