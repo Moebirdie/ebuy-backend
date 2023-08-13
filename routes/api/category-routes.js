@@ -25,7 +25,7 @@ router.get('/:id', async (req, res) => {
     });
 
     if (!oneCategoryData) {
-      res.status(404).json({ message: 'No category found with that id!' });
+      res.status(404).json({ message: `No category found with id ${req.params.id}`});
       return;
     }
 
@@ -51,7 +51,7 @@ router.put('/:id', async (req, res) => {
   try {
     const getCategoryToUpdate = await Category.findByPk(req.params.id);
     if (!getCategoryToUpdate) {
-      res.status(404).json({ message: 'There is no category with this id!' });
+      res.status(404).json({ message: `There is no category with id ${req.params.id}.` });
       return;
     } else {
       const updateCategoryData = await Category.update(req.body, {
@@ -60,7 +60,7 @@ router.put('/:id', async (req, res) => {
         }
       }
       );
-      res.status(200).json(`${getCategoryToUpdate.category_name} updated successfully!`);
+      res.status(200).json(`${getCategoryToUpdate.category_name} updated successfully to ${req.body.category_name}!`);
     }
   }
   catch (err) {
@@ -72,7 +72,7 @@ router.delete('/:id', async (req, res) => {
   try {
     const getCategoryToDelete = await Category.findByPk(req.params.id);
     if (!getCategoryToDelete) {
-      res.status(404).json({ message: 'There is no category with this id!' });
+      res.status(404).json({ message: `There is no category with id ${req.params.id}.`});
       return;
     }
     else {

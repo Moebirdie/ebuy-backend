@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
     });
 
     if (!oneTagData) {
-      res.status(404).json({ message: 'No tag found with that id!' });
+      res.status(404).json({ message: `No tag found with id ${req.params.id}.`});
       return;
     }
 
@@ -52,7 +52,7 @@ router.put('/:id', async (req, res) => {
   try {
     const getTagToUpdate = await Tag.findByPk(req.params.id);
     if (!getTagToUpdate) {
-      res.status(404).json({ message: `There is no tag with id ${req.params.id}!`});
+      res.status(404).json({ message: `There is no tag with id ${req.params.id}.`});
       return;
     } else {
       const updateTagData = await Tag.update(req.body, {
@@ -61,7 +61,7 @@ router.put('/:id', async (req, res) => {
         }
       }
       );
-      res.status(200).json(`${getTagToUpdate.tag_name} updated successfully!`);
+      res.status(200).json(`${getTagToUpdate.tag_name} updated successfully to ${req.body.tag_name}`);
     }
   }
   catch (err) {
@@ -73,7 +73,7 @@ router.delete('/:id', async (req, res) => {
   try {
     const getTagToDelete = await Tag.findByPk(req.params.id);
     if (!getTagToDelete) {
-      res.status(404).json({ message: 'There is no tag with this id!' });
+      res.status(404).json({ message: `There is no tag with id ${req.params.id}` });
       return;
     }
     else {
